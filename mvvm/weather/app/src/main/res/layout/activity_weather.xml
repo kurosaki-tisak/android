@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.devtee.weather.feature.WeatherViewModel"/>
+    </data>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:paddingTop="@dimen/weather_header_padding_top"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/weather_header_padding_bottom"
+                    android:orientation="vertical"
+                    android:layout_gravity="center|top"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Weather.HeaderText"
+                        android:gravity="center"
+                        android:text="@{viewModel.headerWeather}"
+                        tools:text="20"/>
+
+                <TextView
+                        style="@style/Weather.HeaderDescription"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.city}"
+                        tools:text="Bangkok"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/bottom_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        tools:listitem="@layout/item_weather"
+                        tools:itemCount="4"
+                        android:layout_height="wrap_content"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <include
+                android:id="@+id/partialScreen"
+                layout="@layout/partial_loading_error"
+                tools:visibility="gone"/>
+    </FrameLayout>
+
+
+</layout>

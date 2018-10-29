@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.devtee.weather.common.errorloading.ErrorLoadingViewModel"/>
+    </data>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            app:show="@{viewModel.showError || viewModel.loading}">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_error_background_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:show="@{viewModel.showError}">
+
+
+            <TextView
+                    style="@style/Weather.ErrorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/common_error_text_padding"
+                    android:paddingLeft="@dimen/common_error_text_padding"
+                    android:paddingRight="@dimen/common_error_text_padding"
+                    android:paddingStart="@dimen/common_error_text_padding"
+                    android:text="@{viewModel.error}"
+                    tools:text="Something went wrong at our end!"/>
+
+            <Button
+                    style="@style/Weather.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_error_button_padding_top"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="@{viewModel.retryListener}"
+                    android:padding="@dimen/common_error_text_padding"
+                    android:text="@string/common_button_retry"
+                    app:show="@{viewModel.showRetry}"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_transparent"
+                app:show="@{viewModel.loading}"
+                tools:visibility="gone">
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_loading"/>
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

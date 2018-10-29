@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GO-JEK-Weather</string>
+
+    <!-- Common -->
+    <string name="common_text_nointernet">bad internet</string>
+    <string name="common_text_serverunreachable">Something went wrong at our end!</string>
+    <string name="common_text_error_unauthorized">unauthorized</string>
+    <string name="common_text_screennotfound">Something went wrong at our end</string>
+    <string name="common_text_empty">no results found, try again.</string>
+
+    <string name="common_button_retry">RETRY</string>
+</resources>

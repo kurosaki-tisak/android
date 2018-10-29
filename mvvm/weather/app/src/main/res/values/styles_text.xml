@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Weather.ErrorText">
+        <item name="android:fontFamily">@font/roboto_thin</item>
+        <item name="android:textSize">@dimen/common_error_text_description_size</item>
+        <item name="android:textColor">@color/common_error_text_color</item>
+    </style>
+
+    <style name="Weather.HeaderText">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">@dimen/weather_header_title_text_size</item>
+        <item name="android:textColor">@color/weather_header_title_color</item>
+    </style>
+
+    <style name="Weather.HeaderDescription">
+        <item name="android:fontFamily">@font/roboto_thin</item>
+        <item name="android:textSize">@dimen/weather_header_description_text_size</item>
+        <item name="android:textColor">@color/weather_header_description_text_color</item>
+    </style>
+
+    <style name="Weather.ItemText">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/weather_item_text_size</item>
+        <item name="android:textColor">@color/weather_header_title_color</item>
+    </style>
+
+</resources>

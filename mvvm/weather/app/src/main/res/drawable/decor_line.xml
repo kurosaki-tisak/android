@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/weather_item_padding"
+          android:right="@dimen/weather_item_padding">
+
+        <shape android:shape="rectangle">
+
+            <size android:width="@dimen/common_decor_line"
+                  android:height="@dimen/common_decor_line"/>
+
+            <solid android:color="@color/common_line_color"/>
+
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.fabioCollini.daggermock:daggermock:0.8.4@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.fabioCollini.daggermock/daggermock/0.8.4/dbce1e55ee959289e50880763f25cb6c77b1378/daggermock-0.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.fabioCollini.daggermock/daggermock/0.8.4/40166e1f5c1465797ff6dad85519f59816dc642/daggermock-0.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

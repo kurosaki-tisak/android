@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common -->
+    <dimen name="common_error_text_description_size">54sp</dimen>
+    <dimen name="common_button_text_size">16sp</dimen>
+    <dimen name="common_decor_line">0.5dp</dimen>
+    <!-- Common Gap-->
+    <dimen name="common_error_text_padding">16dp</dimen>
+    <dimen name="common_error_button_padding_top">44dp</dimen>
+    <dimen name="common_button_min_height">40dp</dimen>
+
+    <!-- Theme -->
+    <item name="disabledAlpha" format="float" type="dimen">1.0</item>
+
+    <!-- Weather -->
+    <dimen name="weather_header_title_text_size">96sp</dimen>
+    <dimen name="weather_header_description_text_size">36sp</dimen>
+    <dimen name="weather_item_text_size">16sp</dimen>
+    <!-- Weather Gap -->
+    <dimen name="weather_header_padding_top">56dp</dimen>
+    <dimen name="weather_header_padding_bottom">62dp</dimen>
+    <dimen name="weather_item_min_height">80dp</dimen>
+    <dimen name="weather_item_padding">16dp</dimen>
+
+</resources>
