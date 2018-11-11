@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MVVM Training</string>
+
+    <!-- Button -->
+    <string name="button_retry">Retry</string>
+</resources>
